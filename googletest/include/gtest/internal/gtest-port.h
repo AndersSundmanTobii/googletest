@@ -423,7 +423,9 @@ typedef struct _RTL_CRITICAL_SECTION GTEST_CRITICAL_SECTION;
 // is not the case, we need to include headers that provide the functions
 // mentioned above.
 # include <unistd.h>
-# include <strings.h>
+# if GTEST_OS_ZOS
+#  include <strings.h>
+# endif
 #endif  // GTEST_OS_WINDOWS
 
 #if GTEST_OS_LINUX_ANDROID

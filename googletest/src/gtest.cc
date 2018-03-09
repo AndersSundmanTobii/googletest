@@ -62,8 +62,6 @@
 # include <fcntl.h>  // NOLINT
 # include <limits.h>  // NOLINT
 # include <sched.h>  // NOLINT
-// Declares vsnprintf().  This header is not available on Windows.
-# include <strings.h>  // NOLINT
 # include <sys/mman.h>  // NOLINT
 # include <sys/time.h>  // NOLINT
 # include <unistd.h>  // NOLINT
